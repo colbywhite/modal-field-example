@@ -106,7 +106,7 @@ const UserForm = ({ onSubmit }: { onSubmit: SubmitUserFunction }) => {
       <pre>
         <code>{JSON.stringify(value, null, 2)}</code>
       </pre>
-      <Dialog dialogRef={dialogRef}>
+      <Dialog ref={dialogRef}>
         <NameForm
           onSubmit={async (name) => {
             formMethods.setValue('name', name)
