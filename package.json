@@ -6,8 +6,13 @@
       "web"
     ]
   },
+  "scripts": {
+    "start": "yarn rw dev",
+    "lint": "yarn rw lint --fix"
+  },
   "devDependencies": {
-    "@redwoodjs/core": "6.5.1"
+    "@redwoodjs/core": "6.5.1",
+    "prettier-plugin-tailwindcss": "0.4.1"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
